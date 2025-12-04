@@ -1,0 +1,113 @@
+{
+    "id": "signup-lead",
+    "title": "Signup / Lead Form",
+    "description": "Capture leads and new signups with essential contact info",
+    "category": "marketing",
+    "schema": {
+        "title": "Join Our Community",
+        "fields": [
+            {
+                "id": "first_name",
+                "type": "text",
+                "label": "First Name",
+                "required": true,
+                "placeholder": "John"
+            },
+            {
+                "id": "last_name",
+                "type": "text",
+                "label": "Last Name",
+                "required": true,
+                "placeholder": "Doe"
+            },
+            {
+                "id": "email",
+                "type": "text",
+                "label": "Email Address",
+                "required": true,
+                "placeholder": "john.doe@example.com"
+            },
+            {
+                "id": "phone",
+                "type": "phone",
+                "label": "Phone Number",
+                "required": false,
+                "placeholder": "Contact number"
+            },
+            {
+                "id": "company",
+                "type": "text",
+                "label": "Company Name",
+                "required": false,
+                "placeholder": "Your company"
+            },
+            {
+                "id": "company_size",
+                "type": "select",
+                "label": "Company Size",
+                "required": false,
+                "options": [
+                    "1-10",
+                    "11-50",
+                    "51-200",
+                    "201-500",
+                    "500+"
+                ]
+            },
+            {
+                "id": "interests",
+                "type": "multiselect",
+                "label": "Interests",
+                "required": false,
+                "options": [
+                    "Product Updates",
+                    "Newsletter",
+                    "Webinars",
+                    "Case Studies",
+                    "Special Offers"
+                ]
+            },
+            {
+                "id": "heard_from",
+                "type": "select",
+                "label": "How did you hear about us?",
+                "required": false,
+                "options": [
+                    "Google Search",
+                    "Social Media",
+                    "Friend Referral",
+                    "Advertisement",
+                    "Blog",
+                    "Other"
+                ]
+            },
+            {
+                "id": "terms",
+                "type": "checkbox",
+                "label": "I agree to the Terms of Service and Privacy Policy",
+                "required": true
+            }
+        ],
+        "theme": {
+            "mode": "light",
+            "light": {
+                "primary": "#0ea5e9",
+                "secondary": "#64748b",
+                "accent": "#8b5cf6",
+                "error": "#ef4444",
+                "success": "#22c55e",
+                "text": "#0f172a",
+                "background": "#ffffff"
+            },
+            "dark": {
+                "primary": "#38bdf8",
+                "secondary": "#94a3b8",
+                "accent": "#a78bfa",
+                "error": "#f87171",
+                "success": "#4ade80",
+                "text": "#f1f5f9",
+                "background": "#0f172a"
+            }
+        }
+    }
+}

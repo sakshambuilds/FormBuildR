@@ -1,0 +1,113 @@
+{
+    "id": "bug-report",
+    "title": "Bug Report",
+    "description": "Report software bugs and issues with detailed information",
+    "category": "support",
+    "schema": {
+        "title": "Bug Report Form",
+        "fields": [
+            {
+                "id": "reporter_name",
+                "type": "text",
+                "label": "Your Name",
+                "required": true,
+                "placeholder": "Enter your name"
+            },
+            {
+                "id": "email",
+                "type": "text",
+                "label": "Email",
+                "required": true,
+                "placeholder": "your.email@example.com"
+            },
+            {
+                "id": "bug_title",
+                "type": "text",
+                "label": "Bug Title",
+                "required": true,
+                "placeholder": "Brief description of the issue"
+            },
+            {
+                "id": "severity",
+                "type": "select",
+                "label": "Severity",
+                "required": true,
+                "options": [
+                    "Critical",
+                    "High",
+                    "Medium",
+                    "Low"
+                ]
+            },
+            {
+                "id": "category",
+                "type": "select",
+                "label": "Category",
+                "required": true,
+                "options": [
+                    "UI/UX",
+                    "Performance",
+                    "Security",
+                    "Functionality",
+                    "Other"
+                ]
+            },
+            {
+                "id": "description",
+                "type": "textarea",
+                "label": "Detailed Description",
+                "required": true,
+                "placeholder": "Describe the bug in detail..."
+            },
+            {
+                "id": "steps_to_reproduce",
+                "type": "textarea",
+                "label": "Steps to Reproduce",
+                "required": true,
+                "placeholder": "1. Go to...\n2. Click on...\n3. See error"
+            },
+            {
+                "id": "screenshot",
+                "type": "file_upload",
+                "label": "Screenshot (optional)",
+                "required": false,
+                "accept": ".jpg,.jpeg,.png,.gif",
+                "max": 5
+            },
+            {
+                "id": "browser",
+                "type": "multiselect",
+                "label": "Affected Browsers",
+                "required": false,
+                "options": [
+                    "Chrome",
+                    "Firefox",
+                    "Safari",
+                    "Edge",
+                    "Opera"
+                ]
+            }
+        ],
+        "theme": {
+            "mode": "light",
+            "light": {
+                "primary": "#ef4444",
+                "secondary": "#64748b",
+                "accent": "#f59e0b",
+                "error": "#dc2626",
+                "success": "#22c55e",
+                "text": "#0f172a",
+                "background": "#ffffff"
+            },
+            "dark": {
+                "primary": "#f87171",
+                "secondary": "#94a3b8",
+                "accent": "#fbbf24",
+                "error": "#ef4444",
+                "success": "#4ade80",
+                "text": "#f1f5f9",
+                "background": "#0f172a"
+            }
+        }
+    }
+}

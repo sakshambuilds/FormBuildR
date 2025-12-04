@@ -1,0 +1,72 @@
+{
+    "id": "contact-form",
+    "title": "Contact Form",
+    "description": "Simple contact form with name, email, and message fields",
+    "category": "general",
+    "schema": {
+        "title": "Contact Us",
+        "fields": [
+            {
+                "id": "name",
+                "type": "text",
+                "label": "Full Name",
+                "required": true,
+                "placeholder": "Enter your full name"
+            },
+            {
+                "id": "email",
+                "type": "text",
+                "label": "Email Address",
+                "required": true,
+                "placeholder": "your.email@example.com"
+            },
+            {
+                "id": "phone",
+                "type": "phone",
+                "label": "Phone Number",
+                "required": false,
+                "placeholder": "Enter phone number"
+            },
+            {
+                "id": "subject",
+                "type": "select",
+                "label": "Subject",
+                "required": true,
+                "options": [
+                    "General Inquiry",
+                    "Support",
+                    "Sales",
+                    "Other"
+                ]
+            },
+            {
+                "id": "message",
+                "type": "textarea",
+                "label": "Message",
+                "required": true,
+                "placeholder": "Type your message here..."
+            }
+        ],
+        "theme": {
+            "mode": "light",
+            "light": {
+                "primary": "#3b82f6",
+                "secondary": "#64748b",
+                "accent": "#8b5cf6",
+                "error": "#ef4444",
+                "success": "#22c55e",
+                "text": "#0f172a",
+                "background": "#ffffff"
+            },
+            "dark": {
+                "primary": "#60a5fa",
+                "secondary": "#94a3b8",
+                "accent": "#a78bfa",
+                "error": "#f87171",
+                "success": "#4ade80",
+                "text": "#f1f5f9",
+                "background": "#0f172a"
+            }
+        }
+    }
+}
