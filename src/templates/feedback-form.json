@@ -1,0 +1,92 @@
+{
+    "id": "feedback-form",
+    "title": "Feedback Form",
+    "description": "Collect user feedback with ratings and comments",
+    "category": "feedback",
+    "schema": {
+        "title": "Share Your Feedback",
+        "fields": [
+            {
+                "id": "name",
+                "type": "text",
+                "label": "Your Name",
+                "required": false,
+                "placeholder": "Anonymous"
+            },
+            {
+                "id": "email",
+                "type": "text",
+                "label": "Email",
+                "required": false,
+                "placeholder": "your.email@example.com"
+            },
+            {
+                "id": "overall_rating",
+                "type": "rating",
+                "label": "Overall Experience",
+                "required": true,
+                "max": 5
+            },
+            {
+                "id": "category",
+                "type": "select",
+                "label": "Feedback Category",
+                "required": true,
+                "options": [
+                    "Product Quality",
+                    "Customer Service",
+                    "Website Experience",
+                    "Shipping",
+                    "Other"
+                ]
+            },
+            {
+                "id": "satisfaction",
+                "type": "select",
+                "label": "How satisfied are you?",
+                "required": true,
+                "options": [
+                    "Very Satisfied",
+                    "Satisfied",
+                    "Neutral",
+                    "Dissatisfied",
+                    "Very Dissatisfied"
+                ]
+            },
+            {
+                "id": "comments",
+                "type": "textarea",
+                "label": "Additional Comments",
+                "required": false,
+                "placeholder": "Tell us more about your experience..."
+            },
+            {
+                "id": "recommend",
+                "type": "toggle",
+                "label": "Would you recommend us to others?",
+                "required": false
+            }
+        ],
+        "theme": {
+            "mode": "light",
+            "light": {
+                "primary": "#10b981",
+                "secondary": "#64748b",
+                "accent": "#f59e0b",
+                "error": "#ef4444",
+                "success": "#22c55e",
+                "text": "#0f172a",
+                "background": "#ffffff"
+            },
+            "dark": {
+                "primary": "#34d399",
+                "secondary": "#94a3b8",
+                "accent": "#fbbf24",
+                "error": "#f87171",
+                "success": "#4ade80",
+                "text": "#f1f5f9",
+                "background": "#0f172a"
+            }
+        }
+    }
+}

@@ -1,0 +1,103 @@
+{
+    "id": "appointment-booking",
+    "title": "Appointment Booking",
+    "description": "Schedule appointments with date, time, and service selection",
+    "category": "scheduling",
+    "schema": {
+        "title": "Book an Appointment",
+        "fields": [
+            {
+                "id": "client_name",
+                "type": "text",
+                "label": "Full Name",
+                "required": true,
+                "placeholder": "Enter your full name"
+            },
+            {
+                "id": "email",
+                "type": "text",
+                "label": "Email Address",
+                "required": true,
+                "placeholder": "your.email@example.com"
+            },
+            {
+                "id": "phone",
+                "type": "phone",
+                "label": "Phone Number",
+                "required": true,
+                "placeholder": "Contact number"
+            },
+            {
+                "id": "service_type",
+                "type": "select",
+                "label": "Service Type",
+                "required": true,
+                "options": [
+                    "Consultation",
+                    "Follow-up",
+                    "Initial Assessment",
+                    "Treatment",
+                    "Other"
+                ]
+            },
+            {
+                "id": "preferred_datetime",
+                "type": "datetime",
+                "label": "Preferred Date & Time",
+                "required": true
+            },
+            {
+                "id": "duration",
+                "type": "select",
+                "label": "Estimated Duration",
+                "required": true,
+                "options": [
+                    "30 minutes",
+                    "1 hour",
+                    "1.5 hours",
+                    "2 hours"
+                ]
+            },
+            {
+                "id": "notes",
+                "type": "textarea",
+                "label": "Additional Notes",
+                "required": false,
+                "placeholder": "Any specific requirements or information..."
+            },
+            {
+                "id": "first_time",
+                "type": "toggle",
+                "label": "Is this your first appointment?",
+                "required": false
+            },
+            {
+                "id": "reminders",
+                "type": "checkbox",
+                "label": "Send me appointment reminders",
+                "required": false
+            }
+        ],
+        "theme": {
+            "mode": "light",
+            "light": {
+                "primary": "#8b5cf6",
+                "secondary": "#64748b",
+                "accent": "#ec4899",
+                "error": "#ef4444",
+                "success": "#22c55e",
+                "text": "#0f172a",
+                "background": "#ffffff"
+            },
+            "dark": {
+                "primary": "#a78bfa",
+                "secondary": "#94a3b8",
+                "accent": "#f472b6",
+                "error": "#f87171",
+                "success": "#4ade80",
+                "text": "#f1f5f9",
+                "background": "#0f172a"
+            }
+        }
+    }
+}
